@@ -1,0 +1,41 @@
+{
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "dockerfile",
+        "go",
+        "handlebars",
+        "html",
+        "jade",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "powershell",
+        "pub",
+        "python",
+        "restructuredtext",
+        "rust",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yml"
+    ],
+    "cSpell.words": [
+        "LTSC",
+        "MSFT",
+        "MSFT's",
+        "WORKDIR",
+        "ehuffman",
+        "mkdir",
+        "windowsservercore"
+    ]
+}
