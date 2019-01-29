@@ -8,7 +8,7 @@ LABEL Description="A Dockerfile to automate the containerization of A La Mode's 
 This effectively make it PaaS software."
 
 # Make the working directory.
-RUN ["Powershell", "mkdir", "C:\\Total"]
+RUN ["Powershell", "New-Item", "-Path", "\"C:\\\"", "-Name", "\"Total\"", "-ItemType", "Directory"]
 
 # Switch to the working directory.
 WORKDIR C:\\Total
