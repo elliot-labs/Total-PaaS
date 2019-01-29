@@ -14,8 +14,8 @@ RUN ["Powershell", "mkdir", "C:\\Total"]
 WORKDIR C:\\Total
 
 # Download the Total Software and its dependencies to the container.
-RUN ["Powershell", "Invoke-WebRequest", "-Uri \"https://download.microsoft.com/download/5/a/d/5ad868a0-8ecd-4bb0-a882-fe53eb7ef348/VB6.0-KB290887-X86.exe\"", "-OutFile \"VB6Zip.exe\""]
-RUN ["Powershell", "Invoke-WebRequest", "-Uri \"http://download.alamode.com/Installs/TOTAL/TOTALSetup.exe\"", "-OutFile \"TotalSetup.exe\""]
+RUN ["Powershell", "$ProgressPreference = 'SilentlyContinue';", "Invoke-WebRequest", "-Uri \"https://download.microsoft.com/download/5/a/d/5ad868a0-8ecd-4bb0-a882-fe53eb7ef348/VB6.0-KB290887-X86.exe\"", "-OutFile \"VB6Zip.exe\""]
+RUN ["Powershell", "$ProgressPreference = 'SilentlyContinue';", "Invoke-WebRequest", "-Uri \"http://download.alamode.com/Installs/TOTAL/TOTALSetup.exe\"", "-OutFile \"TotalSetup.exe\""]
 
 # Install VB6 prerequisite
 RUN ["Powershell", ".\\VB6zip.exe", "/Q", "/T:C:\\Total\\VB6\\", "/C"]
