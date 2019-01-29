@@ -1,6 +1,11 @@
 # Use MSFT's .Net framework on the latest LTSC release for the optimal usage.
 FROM microsoft/dotnet-framework:3.5-runtime-windowsservercore-ltsc2019
 
+# Global Settings
+ENV CustomerNumber 1234567890
+ENV eMail example@contoso.com
+ENV Password Passw0rd!
+
 # Metadata
 LABEL maintainer="ehuffman@elliot-labs.com"
 LABEL Version="0.0.2"
