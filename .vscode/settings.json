@@ -35,7 +35,9 @@
         "MSFT's",
         "WORKDIR",
         "ehuffman",
+        "infdefaultinstall",
         "mkdir",
+        "vbrun",
         "windowsservercore"
     ]
 }
