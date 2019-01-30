@@ -1,6 +1,6 @@
 # Total PaaS
 
-A containerized version of A La Mode's Total Server software.
+A containerized version of CoreLogic's (Formerly A La Mode) Total Server software.
 This will run in a PaaS environment so that you don't have to worry about operating system(s), and lower level systems/equipment *.   
 This PaaS solution is compatible with dynamic scaling. Meaning if you have a million users jump on, you can have your hosting fabric rev up as many new new instances as needed since these instances are stateless. 
 
@@ -9,7 +9,7 @@ This PaaS solution is compatible with dynamic scaling. Meaning if you have a mil
 ## Requirements
  - Windows Server 2019 or later
  - Windows 10 1809 or later
- - A La Mode Account with server license
+ - CoreLogic (Formerly A La Mode) Account with server license
  - Docker for Windows (tested with 18.09.1)
  - Linux is not supported!
 
@@ -45,7 +45,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- A La Mode Elite Support (https://www.alamode.com/appraiser/elite/) - Thanks for all the help with the automation!
+- CoreLogic's (Formerly A La Mode) Elite Support (https://www.alamode.com/appraiser/elite/) - Thanks for all the help with the automation!
 - https://docs.microsoft.com - Super handy info on Windows Containers.
 - https://docs.docker.com - Great info on docker files. Easy to understand.
 
