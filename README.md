@@ -1,7 +1,8 @@
 # Total PaaS
 
 A containerized version of A La Mode's Total Server software.
-This will run in a PaaS environment so that you don't have to worry about operating system(s), and lower level systems/equipment *.
+This will run in a PaaS environment so that you don't have to worry about operating system(s), and lower level systems/equipment *.   
+This PaaS solution is compatible with dynamic scaling. Meaning if you have a million users jump on, you can have your hosting fabric rev up as many new new instances as needed since these instances are stateless. 
 
 ---
 
