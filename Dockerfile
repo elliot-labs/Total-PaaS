@@ -24,9 +24,9 @@ RUN Powershell.exe -Command \
     $ProgressPreference = 'SilentlyContinue'; \
     $ErrorActionPreference = 'Stop'; \
     Invoke-WebRequest -Uri 'https://download.microsoft.com/download/5/a/d/5ad868a0-8ecd-4bb0-a882-fe53eb7ef348/VB6.0-KB290887-X86.exe' -OutFile 'VB6Zip.exe'; \
-    .\VB6zip.exe /Q /T:C:\Total\VB6\ /C \
-    .\VB6\vbrun60sp6.exe /Q /T:C:\Total\VB6\ /C; \
-    InfDefaultInstall.exe .\VB6\vbrun60.inf; \
+    Start-Process -FilePath '.\\VB6zip.exe' -ArgumentList '/Q /T:C:\\Total\\VB6\\ /C' -Wait; \
+    Start-Process -FilePath '.\VB6\vbrun60sp6.exe' -ArgumentList '/Q /T:C:\\Total\\VB6\\ /C' -wait; \
+    Start-Process -FilePath 'InfDefaultInstall.exe' -ArgumentList '.\\VB6\\vbrun60.inf' -wait; \
     Remove-Item -Path .\VB6\ -Recurse -Force; \
     Remove-Item -Path .\VB6Zip.exe -Force;
 
