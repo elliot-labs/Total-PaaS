@@ -51,5 +51,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## Fine Print:
-- If your not hosting the fabric yourself.
-See (https://docs.microsoft.com/en-us/azure/security/media/security-management-and-monitoring-overview/shared-responsibility.png) for more info.
+- If your not hosting the fabric yourself. See below for more info: 
+![Microsoft Cloud Responsibility breakdown](https://docs.microsoft.com/en-us/azure/security/media/security-management-and-monitoring-overview/shared-responsibility.png "Microsoft cloud responsibility breakdown chart.")
