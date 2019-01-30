@@ -34,7 +34,8 @@ RUN Powershell.exe -Command \
 RUN Powershell.exe -Command \
     $ProgressPreference = 'SilentlyContinue'; \
     $ErrorActionPreference = 'Stop'; \
-    Invoke-WebRequest -Uri 'http://download.alamode.com/Installs/TOTAL/TOTALSetup.exe' -OutFile 'TotalSetup.exe'
+    Invoke-WebRequest -Uri 'http://download.alamode.com/Installs/TOTAL/TOTALSetup.exe' -OutFile 'TotalSetup.exe'; \
+    Remove-Item -Path .\TotalSetup.exe -Force;
 
 # Expose the ports used to the network environment.
 EXPOSE 445/tcp
