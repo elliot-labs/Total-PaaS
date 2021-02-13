@@ -1,5 +1,5 @@
 # Use MSFT's .Net framework on the latest LTSC release for the optimal usage.
-FROM microsoft/dotnet-framework:3.5-runtime-windowsservercore-ltsc2019
+FROM microsoft/dotnet-framework:4.7.2-runtime-windowsservercore-ltsc2019
 
 # Global Settings
 ENV CustomerNumber 1234567890
